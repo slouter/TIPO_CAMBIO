@@ -1,0 +1,5 @@
+package com.dev.cambio.repository;
+
+public interface ItipoCambioDao {
+
+}

@@ -1,0 +1,5 @@
+package com.dev.cambio.controller;
+
+public interface tipoCambioController {
+
+}

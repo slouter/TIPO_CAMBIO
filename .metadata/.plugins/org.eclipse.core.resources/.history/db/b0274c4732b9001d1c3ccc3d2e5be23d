@@ -1,0 +1,288 @@
+package com.dev.cambio.model;
+
+import java.util.Objects;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "cambio")
+public class TipoCambio {
+	
+	@Id
+	@Column(name = "indentificador")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	
+	private int x_ident;
+	
+	@Column(name = "desripcion")
+	private String x_desc;
+	
+	@Column(name = "estado")
+	private float x_estado;
+	
+	@Column(name = "intervalo_1")
+	private float x_inter1;
+	
+	@Column(name = "tccompra_1")
+	private float x_tccompra1;
+	
+	@Column(name = "tcventa_1")
+	private float x_tcventa1;
+	
+	@Column(name = "intervalo_2")
+	private float x_inter2;
+	
+	@Column(name = "tccompra_2")
+	private float x_tccompra2;
+	
+	@Column(name = "tcventa_2")
+	private float x_tcventa2;
+	
+	@Column(name = "intervalo_3")
+	private float x_inter3;
+	
+	@Column(name = "tccompra_3")
+	private float x_tccompra3;
+	
+	@Column(name = "tcventa_3")
+	private float x_tcventa3;
+	
+	@Column(name = "intervalo_4")
+	private float x_inter4;
+	
+	@Column(name = "tccompra_4")
+	private float x_tccompra4;
+	
+	@Column(name = "tcventa_4")
+	private float x_tcventa4;
+	
+	@Column(name = "intervalo_5")
+	private float x_inter5;
+	
+	@Column(name = "tccompra_5")
+	private float x_tccompra5;
+	
+	@Column(name = "tcventa_5")
+	private float x_tcventa5;
+
+	public TipoCambio() {		
+	}
+
+	public TipoCambio(int x_ident, String x_desc, float x_estado, float x_inter1, float x_tccompra1, float x_tcventa1,
+			float x_inter2, float x_tccompra2, float x_tcventa2, float x_inter3, float x_tccompra3, float x_tcventa3,
+			float x_inter4, float x_tccompra4, float x_tcventa4, float x_inter5, float x_tccompra5, float x_tcventa5) {
+		this.x_ident = x_ident;
+		this.x_desc = x_desc;
+		this.x_estado = x_estado;
+		this.x_inter1 = x_inter1;
+		this.x_tccompra1 = x_tccompra1;
+		this.x_tcventa1 = x_tcventa1;
+		this.x_inter2 = x_inter2;
+		this.x_tccompra2 = x_tccompra2;
+		this.x_tcventa2 = x_tcventa2;
+		this.x_inter3 = x_inter3;
+		this.x_tccompra3 = x_tccompra3;
+		this.x_tcventa3 = x_tcventa3;
+		this.x_inter4 = x_inter4;
+		this.x_tccompra4 = x_tccompra4;
+		this.x_tcventa4 = x_tcventa4;
+		this.x_inter5 = x_inter5;
+		this.x_tccompra5 = x_tccompra5;
+		this.x_tcventa5 = x_tcventa5;
+	}
+
+	public int getX_ident() {
+		return x_ident;
+	}
+
+	public void setX_ident(int x_ident) {
+		this.x_ident = x_ident;
+	}
+
+	public String getX_desc() {
+		return x_desc;
+	}
+
+	public void setX_desc(String x_desc) {
+		this.x_desc = x_desc;
+	}
+
+	public float getX_estado() {
+		return x_estado;
+	}
+
+	public void setX_estado(float x_estado) {
+		this.x_estado = x_estado;
+	}
+
+	public float getX_inter1() {
+		return x_inter1;
+	}
+
+	public void setX_inter1(float x_inter1) {
+		this.x_inter1 = x_inter1;
+	}
+
+	public float getX_tccompra1() {
+		return x_tccompra1;
+	}
+
+	public void setX_tccompra1(float x_tccompra1) {
+		this.x_tccompra1 = x_tccompra1;
+	}
+
+	public float getX_tcventa1() {
+		return x_tcventa1;
+	}
+
+	public void setX_tcventa1(float x_tcventa1) {
+		this.x_tcventa1 = x_tcventa1;
+	}
+
+	public float getX_inter2() {
+		return x_inter2;
+	}
+
+	public void setX_inter2(float x_inter2) {
+		this.x_inter2 = x_inter2;
+	}
+
+	public float getX_tccompra2() {
+		return x_tccompra2;
+	}
+
+	public void setX_tccompra2(float x_tccompra2) {
+		this.x_tccompra2 = x_tccompra2;
+	}
+
+	public float getX_tcventa2() {
+		return x_tcventa2;
+	}
+
+	public void setX_tcventa2(float x_tcventa2) {
+		this.x_tcventa2 = x_tcventa2;
+	}
+
+	public float getX_inter3() {
+		return x_inter3;
+	}
+
+	public void setX_inter3(float x_inter3) {
+		this.x_inter3 = x_inter3;
+	}
+
+	public float getX_tccompra3() {
+		return x_tccompra3;
+	}
+
+	public void setX_tccompra3(float x_tccompra3) {
+		this.x_tccompra3 = x_tccompra3;
+	}
+
+	public float getX_tcventa3() {
+		return x_tcventa3;
+	}
+
+	public void setX_tcventa3(float x_tcventa3) {
+		this.x_tcventa3 = x_tcventa3;
+	}
+
+	public float getX_inter4() {
+		return x_inter4;
+	}
+
+	public void setX_inter4(float x_inter4) {
+		this.x_inter4 = x_inter4;
+	}
+
+	public float getX_tccompra4() {
+		return x_tccompra4;
+	}
+
+	public void setX_tccompra4(float x_tccompra4) {
+		this.x_tccompra4 = x_tccompra4;
+	}
+
+	public float getX_tcventa4() {
+		return x_tcventa4;
+	}
+
+	public void setX_tcventa4(float x_tcventa4) {
+		this.x_tcventa4 = x_tcventa4;
+	}
+
+	public float getX_inter5() {
+		return x_inter5;
+	}
+
+	public void setX_inter5(float x_inter5) {
+		this.x_inter5 = x_inter5;
+	}
+
+	public float getX_tccompra5() {
+		return x_tccompra5;
+	}
+
+	public void setX_tccompra5(float x_tccompra5) {
+		this.x_tccompra5 = x_tccompra5;
+	}
+
+	public float getX_tcventa5() {
+		return x_tcventa5;
+	}
+
+	public void setX_tcventa5(float x_tcventa5) {
+		this.x_tcventa5 = x_tcventa5;
+	}
+
+	@Override
+	public String toString() {
+		return "TipoCambio [x_ident=" + x_ident + ", x_desc=" + x_desc + ", x_estado=" + x_estado + ", x_inter1="
+				+ x_inter1 + ", x_tccompra1=" + x_tccompra1 + ", x_tcventa1=" + x_tcventa1 + ", x_inter2=" + x_inter2
+				+ ", x_tccompra2=" + x_tccompra2 + ", x_tcventa2=" + x_tcventa2 + ", x_inter3=" + x_inter3
+				+ ", x_tccompra3=" + x_tccompra3 + ", x_tcventa3=" + x_tcventa3 + ", x_inter4=" + x_inter4
+				+ ", x_tccompra4=" + x_tccompra4 + ", x_tcventa4=" + x_tcventa4 + ", x_inter5=" + x_inter5
+				+ ", x_tccompra5=" + x_tccompra5 + ", x_tcventa5=" + x_tcventa5 + "]";
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(x_desc, x_estado, x_ident, x_inter1, x_inter2, x_inter3, x_inter4, x_inter5, x_tccompra1,
+				x_tccompra2, x_tccompra3, x_tccompra4, x_tccompra5, x_tcventa1, x_tcventa2, x_tcventa3, x_tcventa4,
+				x_tcventa5);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		TipoCambio other = (TipoCambio) obj;
+		return Objects.equals(x_desc, other.x_desc)
+				&& Float.floatToIntBits(x_estado) == Float.floatToIntBits(other.x_estado) && x_ident == other.x_ident
+				&& Float.floatToIntBits(x_inter1) == Float.floatToIntBits(other.x_inter1)
+				&& Float.floatToIntBits(x_inter2) == Float.floatToIntBits(other.x_inter2)
+				&& Float.floatToIntBits(x_inter3) == Float.floatToIntBits(other.x_inter3)
+				&& Float.floatToIntBits(x_inter4) == Float.floatToIntBits(other.x_inter4)
+				&& Float.floatToIntBits(x_inter5) == Float.floatToIntBits(other.x_inter5)
+				&& Float.floatToIntBits(x_tccompra1) == Float.floatToIntBits(other.x_tccompra1)
+				&& Float.floatToIntBits(x_tccompra2) == Float.floatToIntBits(other.x_tccompra2)
+				&& Float.floatToIntBits(x_tccompra3) == Float.floatToIntBits(other.x_tccompra3)
+				&& Float.floatToIntBits(x_tccompra4) == Float.floatToIntBits(other.x_tccompra4)
+				&& Float.floatToIntBits(x_tccompra5) == Float.floatToIntBits(other.x_tccompra5)
+				&& Float.floatToIntBits(x_tcventa1) == Float.floatToIntBits(other.x_tcventa1)
+				&& Float.floatToIntBits(x_tcventa2) == Float.floatToIntBits(other.x_tcventa2)
+				&& Float.floatToIntBits(x_tcventa3) == Float.floatToIntBits(other.x_tcventa3)
+				&& Float.floatToIntBits(x_tcventa4) == Float.floatToIntBits(other.x_tcventa4)
+				&& Float.floatToIntBits(x_tcventa5) == Float.floatToIntBits(other.x_tcventa5);
+	}
+
+		
+}

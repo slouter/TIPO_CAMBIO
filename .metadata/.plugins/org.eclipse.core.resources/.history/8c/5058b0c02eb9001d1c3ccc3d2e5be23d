@@ -1,0 +1,1 @@
+insert into tipoCambio (x_ident,x_desc,x_estado,x_inter1,x_tccompra1,x_tcventa1,x_inter2,x_tccompra2,x_tcventa2,x_inter3,x_tccompra3,x_tcventa3,x_inter4,x_tccompra4,x_tcventa4,x_inter5,x_tccompra5,x_tcventa5) values(1,"TIPO DE CAMBIO",1,500.00,4.09,4.18,1000.00,4.10,4.17,2000.00,4.11,4.16,5000.00,4.12,4.15,0.00,4.13,4.14);

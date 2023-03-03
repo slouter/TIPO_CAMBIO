@@ -1,0 +1,13 @@
+package com.dev.cambio.repository;
+
+import java.util.List;
+
+import com.dev.cambio.model.tipoCambio;
+
+public class tipoCambioImplementacion {
+
+	public tipocambioImpl tipocambioImpl;
+	
+	public List<tipoCambio> findAll();
+	
+}

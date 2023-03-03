@@ -1,0 +1,7 @@
+spring.datasource.driver = driverClassName: com.mysql.cj.jdbc.Driver
+spring.datasource.url=jdbc:mysql://localhost:3306/tipo_Cambio?useSLL=false&serverTimezone=UTC&useLegacyDateTimeCode=false
+spring.datasource.username=root
+spring.datasource.password=mysql
+spring.jpa.show-sql = true 
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL8Dialect

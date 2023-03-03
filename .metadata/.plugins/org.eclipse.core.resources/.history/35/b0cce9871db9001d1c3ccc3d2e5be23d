@@ -1,0 +1,106 @@
+package com.dev.cambio.model;
+
+
+import jakarta.annotation.Generated;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Table(name = "tipoCambio")
+public class tipoCambio {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "indentificador")
+	private int x_ident;
+	
+	@Column(name = "desripcion")
+	private String x_desc;
+	
+	@Column(name = "estado")
+	private int x_estado;
+	
+	@Column(name = "intervalo_1")
+	private double x_inter1;
+	
+	@Column(name = "tccompra_1")
+	private double x_tccompra1;
+	
+	@Column(name = "tcventa_1")
+	private double x_tcventa1;
+	
+	@Column(name = "intervalo_2")
+	private double x_inter2;
+	
+	@Column(name = "tccompra_2")
+	private double x_tccompra2;
+	
+	@Column(name = "tcventa_2")
+	private double x_tcventa2;
+	
+	@Column(name = "intervalo_3")
+	private double x_inter3;
+	
+	@Column(name = "tccompra_3")
+	private double x_tccompra3;
+	
+	@Column(name = "tcventa_3")
+	private double x_tcventa3;
+	
+	@Column(name = "intervalo_4")
+	private double x_inter4;
+	
+	@Column(name = "tccompra_4")
+	private double x_tccompra4;
+	
+	@Column(name = "tcventa_4")
+	private double x_tcventa4;
+	
+	@Column(name = "intervalo_5")
+	private double x_inter5;
+	
+	@Column(name = "tccompra_5")
+	private double x_tccompra5;
+	
+	@Column(name = "tcventa_5")
+	private double x_tcventa5;
+
+	public tipoCambio() {		
+	}
+
+	public tipoCambio(int x_ident, String x_desc, int x_estado, double x_inter1, double x_tccompra1, double x_tcventa1,
+			double x_inter2, double x_tccompra2, double x_tcventa2, double x_inter3, double x_tccompra3,
+			double x_tcventa3, double x_inter4, double x_tccompra4, double x_tcventa4, double x_inter5,
+			double x_tccompra5, double x_tcventa5) {
+		this.x_ident = x_ident;
+		this.x_desc = x_desc;
+		this.x_estado = x_estado;
+		this.x_inter1 = x_inter1;
+		this.x_tccompra1 = x_tccompra1;
+		this.x_tcventa1 = x_tcventa1;
+		this.x_inter2 = x_inter2;
+		this.x_tccompra2 = x_tccompra2;
+		this.x_tcventa2 = x_tcventa2;
+		this.x_inter3 = x_inter3;
+		this.x_tccompra3 = x_tccompra3;
+		this.x_tcventa3 = x_tcventa3;
+		this.x_inter4 = x_inter4;
+		this.x_tccompra4 = x_tccompra4;
+		this.x_tcventa4 = x_tcventa4;
+		this.x_inter5 = x_inter5;
+		this.x_tccompra5 = x_tccompra5;
+		this.x_tcventa5 = x_tcventa5;
+	}
+	
+	
+	
+	
+	
+}

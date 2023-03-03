@@ -1,0 +1,9 @@
+package com.dev.cambio.repository;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.dev.cambio.model.tipoCambio;
+
+public interface ItipoCambioDao extends CrudRepository<tipoCambio, integer> {
+
+}

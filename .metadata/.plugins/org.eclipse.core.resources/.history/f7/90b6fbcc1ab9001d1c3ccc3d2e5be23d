@@ -1,0 +1,11 @@
+package com.dev.cambio.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.dev.cambio.model.tipoCambio;
+
+public interface tipocambioImpl extends JpaRepository<tipoCambio, Long> {
+	
+	
+	
+}
