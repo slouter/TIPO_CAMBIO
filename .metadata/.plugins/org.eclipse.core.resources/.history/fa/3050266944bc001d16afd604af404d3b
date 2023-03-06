@@ -1,0 +1,139 @@
+package com.dev.cambio.model;
+
+import java.util.List;
+import java.util.Objects;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "respuestaCambio")
+public class Respuesta {
+	
+	
+	@Id
+	@Column(name = "formato")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int x_formato;
+	
+	@Column(name = "identificador")
+	private int x_identificador;
+	
+	@Column(name = "codigoSecuencia")
+	private int x_codSecuencia;
+	
+	@Column(name = "direccion")
+	private int x_direccion;
+	
+	@Column(name = "accion")
+	private int x_accion;
+
+	// datos aplicativos
+	private List<DatosRespuesta> datosRespuesta;
+
+	// tabla cambio
+	private List<TipoCambio> listaCambio;
+
+	public Respuesta() {
+	}
+
+	public Respuesta(int x_formato, int x_identificador, int x_codSecuencia, int x_direccion, int x_accion,
+			DatosRespuesta datosRespuesta, List<TipoCambio> listaCambio) {
+		this.x_formato = x_formato;
+		this.x_identificador = x_identificador;
+		this.x_codSecuencia = x_codSecuencia;
+		this.x_direccion = x_direccion;
+		this.x_accion = x_accion;
+		this.datosRespuesta = datosRespuesta;
+		this.listaCambio = listaCambio;
+	}
+
+	public int getX_formato() {
+		return x_formato;
+	}
+
+	public void setX_formato(int x_formato) {
+		this.x_formato = x_formato;
+	}
+
+	public int getX_identificador() {
+		return x_identificador;
+	}
+
+	public void setX_identificador(int x_identificador) {
+		this.x_identificador = x_identificador;
+	}
+
+	public int getX_codSecuencia() {
+		return x_codSecuencia;
+	}
+
+	public void setX_codSecuencia(int x_codSecuencia) {
+		this.x_codSecuencia = x_codSecuencia;
+	}
+
+	public int getX_direccion() {
+		return x_direccion;
+	}
+
+	public void setX_direccion(int x_direccion) {
+		this.x_direccion = x_direccion;
+	}
+
+	public int getX_accion() {
+		return x_accion;
+	}
+
+	public void setX_accion(int x_accion) {
+		this.x_accion = x_accion;
+	}
+
+	public DatosRespuesta getDatosRespuesta() {
+		return datosRespuesta;
+	}
+
+	public void setDatosRespuesta(DatosRespuesta datosRespuesta) {
+		this.datosRespuesta = datosRespuesta;
+	}
+
+	public List<TipoCambio> getListaCambio() {
+		return listaCambio;
+	}
+
+	public void setListaCambio(List<TipoCambio> listaCambio) {
+		this.listaCambio = listaCambio;
+	}
+
+	@Override
+	public String toString() {
+		return "Respuesta [x_formato=" + x_formato + ", x_identificador=" + x_identificador + ", x_codSecuencia="
+				+ x_codSecuencia + ", x_direccion=" + x_direccion + ", x_accion=" + x_accion + ", datosRespuesta="
+				+ datosRespuesta + ", listaCambio=" + listaCambio + "]";
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(datosRespuesta, listaCambio, x_accion, x_codSecuencia, x_direccion, x_formato,
+				x_identificador);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Respuesta other = (Respuesta) obj;
+		return Objects.equals(datosRespuesta, other.datosRespuesta) && Objects.equals(listaCambio, other.listaCambio)
+				&& x_accion == other.x_accion && x_codSecuencia == other.x_codSecuencia
+				&& x_direccion == other.x_direccion && x_formato == other.x_formato
+				&& x_identificador == other.x_identificador;
+	}
+
+}

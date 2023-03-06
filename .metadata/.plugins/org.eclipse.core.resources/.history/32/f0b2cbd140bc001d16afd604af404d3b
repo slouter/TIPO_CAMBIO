@@ -1,0 +1,12 @@
+package com.dev.cambio.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "datosRespuesta")
+public class DatosRespuesta {
+
+	private int x_datosRespuesta;
+	
+}

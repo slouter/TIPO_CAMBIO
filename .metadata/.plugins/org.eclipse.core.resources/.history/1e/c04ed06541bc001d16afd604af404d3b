@@ -1,0 +1,61 @@
+package com.dev.cambio.model;
+
+import java.util.Objects;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "datosRespuesta")
+public class DatosRespuesta {
+
+	private int x_codRespuesta;
+	private String x_desRespuesta;
+
+	public DatosRespuesta() {
+	}
+
+	public DatosRespuesta(int x_codRespuesta, String x_desRespuesta) {
+		this.x_codRespuesta = x_codRespuesta;
+		this.x_desRespuesta = x_desRespuesta;
+	}
+
+	public int getX_codRespuesta() {
+		return x_codRespuesta;
+	}
+
+	public void setX_codRespuesta(int x_codRespuesta) {
+		this.x_codRespuesta = x_codRespuesta;
+	}
+
+	public String getX_desRespuesta() {
+		return x_desRespuesta;
+	}
+
+	public void setX_desRespuesta(String x_desRespuesta) {
+		this.x_desRespuesta = x_desRespuesta;
+	}
+
+	@Override
+	public String toString() {
+		return "DatosRespuesta [x_codRespuesta=" + x_codRespuesta + ", x_desRespuesta=" + x_desRespuesta + "]";
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(x_codRespuesta, x_desRespuesta);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		DatosRespuesta other = (DatosRespuesta) obj;
+		return x_codRespuesta == other.x_codRespuesta && Objects.equals(x_desRespuesta, other.x_desRespuesta);
+	}
+
+}

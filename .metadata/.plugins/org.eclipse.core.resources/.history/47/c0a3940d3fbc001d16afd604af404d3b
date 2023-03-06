@@ -1,0 +1,17 @@
+package com.dev.cambio.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity 
+@Table(name = "respuestaCambio")
+public class Respuesta {
+	
+	private int x_formato;
+	private int x_identificador;
+	private int x_codSecuencia;
+	private int x_direccion;
+	private int x_accion;
+	
+
+}
